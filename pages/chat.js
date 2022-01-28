@@ -21,8 +21,8 @@ export default function ChatPage() {
                 console.log('Dados da consulta:', data);
                 setListaDeMensagens(data);
             });
-      }, []);
-      
+    }, []);
+    
     /*
     // Usuário
     - Usuário digita no campo textarea
@@ -201,7 +201,7 @@ function MessageList(props) {
                                     display: 'inline-block',
                                     marginRight: '8px',
                                 }}
-                                src={`https://github.com/drielisonlopes.png`}
+                                src={`https://github.com/${mensagem.de}.png`}
                             />
                             <Text tag="strong">
                                 {mensagem.de}
